@@ -8,12 +8,12 @@ public class HelloWorld {
 	 * @param args
 	 */
 	public HelloWorld(){
-		//check the allowed/not empty c-tor
+		//allowed/not empty c-tor
 		return;
 	}//c-tor
 	
 	public	HelloWorld(String s){
-		//check the non empty costructor
+		//non empty constructor
 		boolean b = true;
 		b = b ? true: false;
 		return;
@@ -54,8 +54,10 @@ public class HelloWorld {
 			return;
 		} 
 		catch (Exception e) {
-			System.out.println(e);
-			return;
+			if (true) {
+				System.out.println(e);
+				return;
+			}
 		}
 		finally
 		{
@@ -106,4 +108,17 @@ public class HelloWorld {
 		    	return;
 		}
 	}
+	
+	public void testTryCatch4()
+    {
+	    int y=0;
+        int u=8;
+        try {
+            int e=u-y;
+        } 
+        catch (IllegalArgumentException e) {
+            System.out.println(e);
+            return;
+        }
+    }
 }

@@ -315,14 +315,8 @@
                 <description>%EitherLogOrThrowCheck.loggerMethodNames</description>
             </property-metadata>
         </rule-metadata>
-
-<!-- DOES NOT WORK PROPERLY
-        <rule-metadata name="%NoMainMethodInAbstractClass.name" internal-name="NoMainMethodInAbstractClass" parent="TreeWalker">
-            <alternative-name internal-name="com.github.sevntu.checkstyle.checks.coding.NoMainMethodInAbstractClass"/>
-            <description>%NoMainMethodInAbstractClass.desc</description>
-    	</rule-metadata>
-
-        <rule-metadata name="%RedundantReturnCheck.name" internal-name="RedundantReturn" parent="TreeWalker">
+        
+         <rule-metadata name="%RedundantReturnCheck.name" internal-name="RedundantReturn" parent="TreeWalker">
             <alternative-name internal-name="com.github.sevntu.checkstyle.checks.coding.RedundantReturnCheck" />
             <description>%RedundantReturnCheck.desc</description>
             <property-metadata name="allowReturnInEmptyMethodsAndConstructors" datatype="Boolean" default-value="false">
@@ -330,6 +324,14 @@
             </property-metadata>
             <message-key key="redundant.return" />
         </rule-metadata>
+
+<!-- DOES NOT WORK PROPERLY
+        <rule-metadata name="%NoMainMethodInAbstractClass.name" internal-name="NoMainMethodInAbstractClass" parent="TreeWalker">
+            <alternative-name internal-name="com.github.sevntu.checkstyle.checks.coding.NoMainMethodInAbstractClass"/>
+            <description>%NoMainMethodInAbstractClass.desc</description>
+    	</rule-metadata>
+
+       
 	-->      
       
         <rule-metadata name="%SimpleAccessorNameNotationCheck.name" internal-name="SimpleAccessorNameNotation" parent="TreeWalker">
