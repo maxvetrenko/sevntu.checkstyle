@@ -75,5 +75,17 @@ public class MapIterationInForEachLoopTest extends BaseCheckTestSupport
                 getPath("InputMapIterationInForEachLoopSkipIf.java"),
                 expected);
     }
-    
+
+    @Test
+    public final void basic2() throws Exception
+    {
+    	mCheckConfig.addAttribute("proposeValuesUsage", "true");
+        mCheckConfig.addAttribute("proposeKeySetUsage", "false");
+        mCheckConfig.addAttribute("proposeEntrySetUsage", "false");
+
+        final String[] expected = {};
+
+        verify(mCheckConfig,
+                getPath("InputMapIterationInForEachLoop2.java"), expected);
+    }
 }
